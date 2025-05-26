@@ -7,8 +7,8 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node server-with-mysql.js",
-    "start:mysql": "node --watch server-with-mysql.js",
+    "start": "node app.js",
+    "start:mysql": "node --watch app.js",
     "start:local": "node --watch server-with-local.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
