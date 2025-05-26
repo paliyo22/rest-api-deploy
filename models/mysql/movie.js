@@ -210,10 +210,10 @@ export class MovieModel {
       );
 
       if (result.affectedRows === 0) {
-        return "No movie found with that ID";
+        return false;
       }
 
-      return "Movie removed";
+      return true;
     } catch (e) {
       
       throw new Error('Error deleting movie');
