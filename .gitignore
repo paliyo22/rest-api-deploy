@@ -1,0 +1,4 @@
+node_modules
+.env
+conectarDb.js
+api.http
