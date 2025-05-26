@@ -7,7 +7,7 @@ import { MovieModel } from './models/mysql/movie.js'
   
 const app = express()
 app.use(json())
-app.use(corsMiddleware())
+app.use(corsMiddleware)
 app.disable('x-powered-by')
 
 app.use('/movies', createMovieRouter({movieModel: MovieModel}))
